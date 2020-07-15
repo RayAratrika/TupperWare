@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+    <title>TupperWare</title>
+</head>
+
+<body>
+    <div class='menuWindow'>
+        <div class='menuContent'>
+            <img src='./assets/images/back.png' id='close' onclick="closeMenu()">
+            <p style='margin-top: 5%'>ALL MENU CONTENT HERE</p>
+        </div>
+    </div>
+
+    <div class='container'>
+        <div class='navbar'>
+            <div class='left-navbar'>
+                <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/800px-Hamburger_icon.svg.png'
+                    id='hamburger' onclick="showMenu()">
+                <img src='https://www.tupperwareindia.com/assets/system_images/tupperware-print-logo-black_IN.svg'
+                    id='logo'>
+            </div>
+            <div class='right-navbar'>
+                <p class='shortcut-menu'><a href="https://www.tupperwareindia.com/about-us">ABOUT US</a></p>
+                <p class='shortcut-menu'><a href="#products">PRODUCTS</a></p>
+                <p class='shortcut-menu'><a href="#contacts">CONTACT US</a></p>
+            </div>
+        </div>
+
+        <div class='carousel'>
+            <div class='slide-show'>
+                <div class='slide'>
+                    <img
+                        src='https://www.tupperwareindia.com/assets/images/mediacenter-images/077825-Tupperware_Corporate-site_banner-with-Choose-TUP.jpg'>
+                </div>
+                <div class='slide'>
+                    <img
+                        src='https://www.tupperwareindia.com/assets/images/mediacenter-images/080130-Tuppeware-Catalogue-Brochure.jpg'>
+                </div>
+                <div class='slide'>
+                    <img
+                        src='https://www.tupperwareindia.com/assets/images/mediacenter-images/083121-Tuppeware-Catalogue-Brochure-march-2020.jpg'>
+                </div>
+
+                <p class='prev-image' onclick="change('slide',-1)">&#10094;</p>
+                <p class='next-image' onclick="change('slide',1)">&#10095;</p>
+            </div>
+
+            <div class='three-dots'>
+                <span class='dot' onclick="current('slide', 1)"></span>
+                <span class='dot' onclick="current('slide', 2)"></span>
+                <span class='dot' onclick="current('slide', 3)"></span>
+            </div>
+        </div>
+
+        <div class='products' id='products'>
+            <h1>Product Range</h1>
+            <p>We bring to you an amazing range of kitchen solutions and exciting first time ever new products,
+                on-the-go
+                solutions, and space saving utility products that will make your work effortless. This year add that
+                little
+                extra with Tupperware – your perfect Kitchen partner and live every moment beautifully.
+            </p>
+
+            <div class='all-products'>
+                <div class='grid item-1'>
+                    <div class='image'>
+                        <img
+                            src='https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/foodnavigator-usa.com/article/2020/04/13/from-scratch-cooking-to-home-baking-what-coronavirus-fueled-trends-could-linger-post-pandemic/10903518-1-eng-GB/From-scratch-cooking-to-home-baking-What-coronavirus-fueled-trends-could-linger-post-pandemic_wrbm_large.jpg'>
+                    </div>
+                    <p>COOK & BAKE</p>
+                </div>
+                <div class='grid item-2'>
+                    <div class='image'>
+                        <img src='https://i.pinimg.com/originals/6e/39/ed/6e39ed94b1cae2366a1a59ec031ebc29.jpg'>
+                    </div>
+                    <p>FOOD PREPARATION</p>
+                </div>
+                <div class='grid item-3'>
+                    <div class='image'>
+                        <img
+                            src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSxVUxoAcdYo1zclQLLWJKhV1-QrhVRul8gcQ&usqp=CAU'>
+                    </div>
+                    <p>FOOD STORAGE</p>
+                </div>
+                <div class='grid item-4'>
+                    <div class='image'>
+                        <img
+                            src='https://topratedkitchen.com/wp-content/uploads/2016/07/Glass-Food-Storage-Containers.jpg'>
+                    </div>
+                    <p>GIFT SETS</p>
+                </div>
+                <div class='grid item-5'>
+                    <div class='image'>
+                        <img src='https://www.tupperwareindia.com/assets/images/mediacenter-images/062783-banner.jpg'>
+                    </div>
+                    <p>MICROWAVE SAFE</p>
+                </div>
+                <div class='grid item-6'>
+                    <div class='image'>
+                        <img
+                            src='https://www.tupperwareindia.com/service/appng/tupperware-products/webservice/images/278845_666x468.jpg'>
+                    </div>
+                    <p>BOTTLES</p>
+                </div>
+            </div>
+        </div>
+
+        <div class='testimonials'>
+            <div class='customer-reviews'>
+                <h1>Our Customer's Review </h1>
+                <div class='comment'>
+                    <p class='name'>Vandana Khandelwal</p>
+                    <p class='work-place'>Udaan Party Sales( Vanguard Emerald Group Manager)</p>
+                    <p class='customer-comment'>
+                        “Tupperware has shown me the way to live a life, of purpose and dignity.”<br><br>
+                        A hard-working lady with lots of dreams in her eyes, Vandana joined Tupperware in 2012.
+                        Tragedy hit her world with the untimely demise of her husband and the responsibility of being
+                        the bread winner of the family fell on her. With her daughter and Tupperware as support, she
+                        decided to re-start her life. Within 2 months of joining Tupperware she was promoted to Manager
+                        level. She enjoys selling Tupperware and follows the Tupperware plan to the core. She is a
+                        certified Kitchen Expert and does at least one Kitchen Expert hour every week. She is known as
+                        the KE Queen of Udaan Party Sales.<br><br>
+                        She is now a Vanguard Emerald Group Manager with two Baby Managers. For her, Tupperware became
+                        financial, social and emotional support. Her life is a true example of the possibilities that
+                        Tupperware Income Opportunity presents.
+                    </p>
+                </div>
+                <div class='comment'>
+                    <p class='name'>Chetna Randive</p>
+                    <p class='work-place'>Amazon review</p>
+                    <p class='customer-comment'>
+                        "I LOVE all tupperware product, it's made my life more organized."<br><br>
+                        I used to end up throwing lettuce and other veggies away because I
+                        could not use them fast enough. I put romaine in one and it stayed fresh almost indefinitely.
+                        Amazing! Same for green onions ! I don't like the way the flavor on green onions changes in just
+                        a
+                        few days, but in the tupperware, it maintains its freshness. I've also tried strawberries and
+                        yellow
+                        squash. I'm a believer !! The other benefit is that the pictures on the containers and on the
+                        instructions have educated me. For instance, carrots can be left in any seal container, so now I
+                        know when to use products I already had. I am a very happy customer.
+                    </p>
+                </div>
+                <div class='comment'>
+                    <p class='name'>Tammy</p>
+                    <p class='work-place'>Amazon review</p>
+                    <p class='customer-comment'>
+                        "Tupperware products are amazing!"<br><br>
+                        I purchased my first set on sale through a Tupperware party. I loved them so much
+                        I wanted more but didn't want to spend the money. They are quite pricey. I found them for a
+                        great
+                        price on Amazon and don't regret making the purchase. I have used them for many different types
+                        of
+                        produce; cucumbers, all kinds of peppers, lemons and limes last so much longer, but my favorite
+                        use
+                        is for cilantro and other herbs and strawberries. I used to always end up throwing out cilantro
+                        that
+                        had wilted or gotten very soft, I have not had that problem since using these
+                        containers.<br><br>
+                        Strawberries are the most amazing! I bought strawberries that were MUCH riper than I like and
+                        was
+                        very worried that even the Fridgesmarts wouldn't be able to protect them. I purchased them on a
+                        Tuesday and reluctantly opened the Fridgesmart on Saturday to clean and slice them and they were
+                        perfect! I'm sure there are other products out there that would maybe do the same, but I haven't
+                        found them yet.
+                    </p>
+                </div>
+            </div>
+
+            <p class='prev-comment' onclick="change('comment',-1)">&#10094;</p>
+            <p class='next-comment' onclick="change('comment',1)">&#10095;</p>
+
+            <div class='commnet-three-dots'>
+                <span class='comment-dot' onclick="current('comment', 1)"></span>
+                <span class='comment-dot' onclick="current('comment', 2)"></span>
+                <span class='comment-dot' onclick="current('comment', 3)"></span>
+            </div>
+
+            <div class='contacts' id='contacts'>
+                <div class='contactsColumn'>
+                    <div class='top'>
+                        <p>Contact Us</p>
+                    </div>
+                    <a href="mailto:info@tupperware.com?Subject=Customer%20Service" target="_blank">
+                        <img src="https://icons.iconarchive.com/icons/graphicloads/100-flat-2/256/email-icon.png">
+                    </a><br><br>
+                    <a href="https://www.instagram.com/tupperware_india/?hl=en">
+                        <img
+                            src='https://www.freepnglogos.com/uploads/instagram-icon-png/instagram-icon-suzem-limited-make-known-20.png'>
+                    </a><br><br>
+                    <a href="https://twitter.com/tupperwarein">
+                        <img
+                            src='https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png'>
+                    </a><br><br>
+                    <a href="https://www.facebook.com/TupperwareIndia?ref=ts">
+                        <img
+                            src='https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/facebook_circle-512.png'>
+                    </a><br><br>
+                </div>
+                <div class='contactsColumn'>
+                    <div class='top'>
+                        <p>Career</p>
+                    </div>
+                    <p>Contact Tupperware India at:<a href="mailto:hrindia@tupperware.com ?Subject=Career" rel="email"
+                            style="text-decoration: none; color: rgb(255, 255, 255);">
+                            hrindia@tupperware.com
+                        </a></p>
+                    <p>Write to us at -<br>
+                        <span style="text-align: right;">
+                            Company Headquarters <br>
+                            Tupperware India Pvt. Ltd.<br>
+                            1A, Udyog Vihar, Sector 18<br>
+                            Gurgaon - 122001, India<br>
+                            Ph : 0124-4322222
+                        </span>
+                    </p>
+                </div>
+                <div class='contactsColumn'>
+                    <div class='top'>
+                        <p>TupperWare Advantage</p>
+                    </div>
+                    <div class=' advantage'>
+                        <p>One-time use plastic</p>
+                        <p>Colour and pigment safe</p>
+                        <p>Rigorous global quality</p>
+                        <p>Lifetime warranty</p>
+                        <p>Microwave safe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='discount'>
+            <img src="./assets/images/discount.png">
+        </div>
+
+    </div>
+
+
+    <script>
+        var slideNum = 1, commentNum = 1;
+        document.body.onload = () => {
+            change('slide', 0);
+            change('comment', 0);
+        }
+        var menu = document.getElementById('hamburger');
+
+        function showMenu() {
+            $('.container').css('display', 'none');
+            $('.menuWindow').show("slide", { direction: "left" }, 500);
+        }
+
+        function closeMenu() {
+            $('.menuWindow').hide("slide", { direction: "left" }, 500);
+            setTimeout(() => $('.container').css('display', 'block'), 500);
+        }
+
+        function change(section, num) {
+            if (section === 'slide') changeSlide(slideNum += num, section, 'dot');
+            if (section === 'comment') changeSlide(commentNum += num, section, 'comment-dot');
+        }
+
+        function current(section, num) {
+            if (section === 'slide') changeSlide(num, section, 'dot');
+            if (section === 'comment') changeSlide(num, section, 'comment-dot');
+        }
+
+        function changeSlide(pos, section, dots) {
+            var x = document.getElementsByClassName(section);
+            var y = document.getElementsByClassName(dots);
+
+            if (pos > x.length) pos = 1;
+            else if (pos < 1) pos = x.length;
+
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = 'none';
+            }
+            for (var i = 0; i < y.length; i++) {
+                $(y[i]).css('background-color', 'rgba(66, 65, 65, 0.733)');
+            }
+
+            $(x[pos - 1]).fadeIn(1000);
+            if (section === 'comment') $(y[pos - 1]).css('background-color', 'rgb(60, 192, 33)');
+            else $(y[pos - 1]).css('background-color', 'black');
+
+            if (section === 'slide') setTimeout(() => changeSlide(++pos, section, dots), 7000);
+        }
+
+        var discount = document.getElementsByClassName('discount')[0];
+
+        // $(window).scroll(function () {
+        //     if ($(document).scrollTop() >= $(document).height() / 2);
+        //     $('.discount').fadeIn(2000);
+        //     window.onclick = (event) => {
+        //         if (event.target !== discount) $('.discount').fadeOut(1000);
+        //     }
+        // });
+        setTimeout(() => {
+            $('.discount').fadeIn(1000);
+            window.onclick = (event) => {
+                if (event.target !== discount) $('.discount').fadeOut(800);
+            }
+        }, 180000)
+
+    </script>
+</body>
+
+</html>

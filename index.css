@@ -1,0 +1,394 @@
+body{
+    margin: 0;
+    background-color: whitesmoke;
+    text-align: center;
+    font-family: 'montserrat';
+    /* background-image: url('./assets/images/bg.png'); */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menuWindow{
+    display: none;
+    background-color: oldlace;
+    width: 100%;
+    height: 560px;
+}
+
+.menuContent{
+    padding: 2%;
+}
+
+#close{
+    width: 40px; height: auto;
+    cursor: pointer;
+    margin-left: -96%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 2% auto auto auto;
+}
+
+.left-navbar{
+    width: 40%;
+    display: flex;
+    justify-content: left;
+    margin-left: -3%;
+}
+
+#hamburger{
+    width: 40px; height: 40px;
+    margin-top: 1.8%;
+    cursor: pointer;
+}
+
+#logo{
+    width: 290px; height: auto;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+
+.right-navbar{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.shortcut-menu{
+    width: 160px; height: 36px;
+    font-size: 22px;
+    font-weight: 600;
+    background-color: rgb(60, 192, 33);
+    padding-top: 1.2%;
+    box-shadow: 0 6px 12px 0 rgba(46, 46, 46, 0.404);
+    transition: 0.6s ease;
+}
+.shortcut-menu:hover{
+    background-color: rgb(0, 0, 0);
+}
+.shortcut-menu:hover a{
+    text-decoration: none;
+    color: rgb(56, 201, 92);
+}
+.shortcut-menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.right-navbar p{
+    margin: 1% auto;
+}
+
+.carousel{
+    margin-top: 3%;
+}
+
+.slide-show{
+    width: 96%;
+    margin: auto;
+}
+
+.slide img{
+    width: 100%;
+    height: auto;
+}
+
+.prev-image, .next-image, .prev-comment, .next-comment{
+    cursor: pointer;
+    position: absolute;   
+    top: 54%;
+    padding: 15px 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    z-index:9;
+    transition: 0.6s ease;
+    border-radius: 6px;
+}
+
+.prev-comment, .next-comment{
+    color: grey;
+    top: 300%;
+}
+
+.prev-image{
+    left:10px;
+}
+.next-image{
+    right: 15px;
+}
+.prev-comment{
+    left: 75px;
+}
+.next-comment{
+    right: 80px;
+}
+
+.prev-image:hover, .next-image:hover, .prev-comment:hover, .next-comment:hover{
+    background-color: rgba(78, 78, 78, 0.534);
+    color: white;
+}
+
+.three-dots, .comment-three-dots{
+    text-align: center;
+    width: 96%;
+    margin: auto;
+}
+
+.dot, .comment-dot{
+    display: inline-block;   
+    cursor: pointer; 
+    width: 16px; height: 16px;
+    margin: 1% 0.5%;
+    border-radius: 50%;
+    background-color: rgba(66, 65, 65, 0.733);
+}
+.comment-dot{
+    background-color: grey;
+}
+
+.products{
+    width: 90%;
+    margin: auto;
+}
+.products h1{
+    text-align: left;
+    font-size: 46px;
+}
+.products p{
+    text-align: left;
+    color: rgb(60, 192, 33);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.all-products{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 80%; 
+    margin: auto;
+    margin-top: 4%;
+}
+.all-products p{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.grid{
+    height: 250px;
+}
+
+.image{
+    overflow: hidden;
+    width: 270px; height: 167px;
+}
+
+.grid img{
+    width: 270px; height: 167px;
+    transition: 0.6s ease;
+}
+.grid img:hover{
+    transform: scale(1.1);
+    background-color: rgb(109, 109, 109);
+}
+
+.testimonials{
+    width: 100%;
+    background-color: black;
+    color: rgb(60, 192, 33);
+    padding-top: 2%;
+}
+.customer-reviews{
+    width: 90%;
+    margin: auto;
+
+}
+.customer-reviews h1{
+    text-align: left;
+    font-size: 40px;
+    margin-bottom: 6%;
+}
+
+.comment{
+    width: 80%;
+    margin: auto;
+}
+
+.name{
+    font-size: 22px;
+    font-weight: bold;
+}
+.work-place{
+    font-size: 14px;
+    margin-top: -2%;
+    font-weight: bold;
+    color: grey;
+}
+.customer-comment{
+    font-size: 18px;
+}
+
+.contacts{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 80%;
+    margin: auto;
+    margin-top: 6%;
+    color: white;
+}
+
+.top p{
+    margin-bottom: 10%;
+    font-weight: 700;
+    font-size: 24px;
+    color: #3cc021;
+}
+
+.contactsColumn a img{
+    width: 40px; height: auto;
+}
+
+.advantage p{
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
+
+.discount{
+    display: none;
+    width: 100%;
+    background-color: rgba(71, 71, 71, 0.411);
+    position: fixed;
+    top: 30%;
+}
+.discount img{
+    width: 300px; height: auto;
+}
+
+@media screen and (max-width: 770px){   
+    .grid .image{
+        overflow: hidden;
+        width: 140px; height: 90px;
+    }
+
+    .navbar{
+        width: 98%;
+        margin: auto;
+    }
+
+    .left-navbar{
+        margin-left: 6px;
+    }
+
+    #hamburger{
+        width: 22px; height: 16px;
+        margin-top: 4%;
+        cursor: pointer;
+    }
+    
+    #logo{
+        width: 125px; height: auto;
+        margin-left: 4%;
+        margin-top: 2%;
+    }
+        
+    .shortcut-menu{
+        width: fit-content; height: 25px;
+        font-size: 12px;
+        padding-left: 1%;
+        padding-right: 1%;
+        background-color: whitesmoke;
+        box-shadow: none;
+    }   
+
+    .prev-image, .next-image, .prev-comment, .next-comment{  
+        top: 12%;
+        padding: 15px 20px;
+        font-size: 24px;
+    }
+
+    .prev-comment, .next-comment{
+        color: grey;
+        top: 180%;
+    }
+    
+    .prev-image{
+        left:0;
+    }
+    .next-image{
+        right: 0;
+    }
+    .prev-comment{
+        left: 0;
+    }
+    .next-comment{
+        right: 0;
+    }
+
+    .dot, .comment-dot{
+        width: 12px; height: 12px;
+    }
+
+    .products h1, .customer-reviews h1{
+        font-size: 28px;
+    }
+    .products p{
+        font-size: 14px;
+    }
+
+    .grid p{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .grid{
+        height: 150px;
+        text-align: center;
+    }
+    .all-products{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-top: 10%;
+    }
+    .grid img{
+        width: 140px; height: 90px;
+        margin-left: 5%;
+    }
+
+    .name{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .work-place{
+        font-size: 11px;
+        margin-top: -6%;
+    }
+    .customer-comment{
+        font-size: 14px;
+    }
+
+    .contacts{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 90%;
+    }
+
+    .contactsColumn .top p{
+        font-size: 15px;
+        margin-bottom: 16px;
+    }
+
+    .contactsColumn p{
+        font-size: 12px;
+    }
+
+    .advantage p{
+        font-size: 10px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+}
