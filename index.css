@@ -304,6 +304,7 @@ body{
     .shortcut-menu{
         width: fit-content; height: 25px;
         font-size: 10px;
+        padding-top: 2.4%;
         padding-left: 1%;
         padding-right: 1%;
         background-color: whitesmoke;
@@ -354,6 +355,7 @@ body{
         text-align: center;
     }
     .all-products{
+        width: 90%; margin: auto;
         display: grid;
         grid-template-columns: auto auto;
         margin-top: 10%;
