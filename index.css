@@ -1,12 +1,16 @@
 html{
     scroll-behavior: smooth;
 }
-
 body{
     margin: 0;
     background-color: whitesmoke;
     text-align: center;
     font-family: 'montserrat';
+    /* background-image: url('./assets/images/bg.png'); */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .menuWindow{
     display: none;
@@ -235,11 +239,21 @@ body{
 
 .contacts{
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: auto auto;
     width: 80%;
     margin: auto;
     margin-top: 6%;
     color: white;
+}
+.top-bottom{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    margin-top: 0;
+}
+
+.why-tupperware{
+    margin-left: 2%;
 }
 
 .top p{
@@ -268,6 +282,9 @@ body{
 .discount img{
     width: 300px; height: auto;
 }
+
+
+
 
 @media screen and (max-width: 770px){   
     .grid .image{
@@ -298,8 +315,7 @@ body{
         
     .shortcut-menu{
         width: fit-content; height: 25px;
-        font-size: 10px;
-        padding-top: 3.6%;
+        font-size: 12px;
         padding-left: 1%;
         padding-right: 1%;
         background-color: whitesmoke;
@@ -350,7 +366,6 @@ body{
         text-align: center;
     }
     .all-products{
-        width: 90%; margin: auto;
         display: grid;
         grid-template-columns: auto auto;
         margin-top: 10%;
@@ -374,19 +389,34 @@ body{
 
     .contacts{
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
         width: 90%;
+        margin: auto;
+        margin-left: 10%;
     }
-
+    .top-bottom{
+        display: block;
+        grid-template-columns: auto;
+        margin: auto;
+        margin-top: 0;
+    }
+    
+    .why-tupperware{
+        margin-left: 2%;
+    }
+    
     .contactsColumn .top p{
         font-size: 15px;
         margin-bottom: 16px;
     }
 
     .contactsColumn p{
-        font-size: 10px;
+        font-size: 12px;
     }
 
+    .advantage{
+        margin-top: -2.4%;
+    }
     .advantage p{
         font-size: 10px;
         margin-top: 2px;
