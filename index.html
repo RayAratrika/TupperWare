@@ -298,13 +298,16 @@
         }
 
         var discount = document.getElementsByClassName('discount')[0];
+
         $(window).scroll(function () {
-            console.log($(window).scrollTop());
             if ($(window).scrollTop() > $('.container').height() / 2.6) $('.discount').fadeIn(2000);
             window.onclick = (event) => {
-                if (event.target !== discount) $('.discount').fadeOut(1000);
+                if (event.target !== discount) {
+                    $('.discount').fadeOut(1000);
             }
-         });
+            setTimeout(() => $('.discount').remove(), 1500);
+        });
+            
 //         setTimeout(() => {
 //             $('.discount').fadeIn(1000);
 //             window.onclick = (event) => {
